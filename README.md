@@ -45,7 +45,7 @@ its contents — it's not needed after the notes have been added.
    clasp create --type standalone --title "Amazon Order Lookup"
    ```
 5. Push the code: `clasp push`
-6. Open the script project in the browser: `clasp open`
+6. Open the script project in the browser: `clasp open-script`
 7. Go to **Deploy → Test deployments**
 8. Set the application type to **Editor Add-on**
 9. Select your Tiller spreadsheet as the test document
@@ -57,12 +57,12 @@ its contents — it's not needed after the notes have been added.
 
 1. Edit `Code.gs` locally
 2. `clasp push --force`
-3. Open the Apps Script project (`clasp open`) and execute a new **test
+3. Open the Apps Script project (`clasp open-script`) and execute a new **test
    deployment** — reloading the spreadsheet alone is not enough
 
 ### Installing in a New Spreadsheet
 
-1. Open the Apps Script project: `clasp open`
+1. Open the Apps Script project: `clasp open-script`
 2. Go to **Deploy → Test deployments**
 3. Select the new spreadsheet as the test document
 4. Click **Execute**
