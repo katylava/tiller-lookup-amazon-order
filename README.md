@@ -1,7 +1,31 @@
-# Lookup Amazon Order From Cell Value
+# Tiller Amazon Order Lookup
 
-A Google Apps Script add-on for Tiller spreadsheets that looks up Amazon order
-details from a "tmp-amazon" sheet (columns: total, date, items).
+A Google Apps Script add-on for Tiller spreadsheets that matches Amazon
+transactions to order details (date and items) from an exported Amazon order
+history.
+
+## Prerequisites
+
+- A [Tiller](https://www.tillerhq.com/) spreadsheet with a "Transactions" sheet
+  (standard Tiller columns: Description, Amount, Category, etc.)
+- A sheet named **"tmp-amazon"** in the same spreadsheet containing your Amazon
+  order history export, with columns: `total`, `date`, `items`
+
+## Initial Setup
+
+1. Install [clasp](https://github.com/google/clasp): `npm install -g @google/clasp`
+2. Log in: `clasp login`
+3. Enable the Apps Script API at https://script.google.com/home/usersettings
+4. Create the standalone Apps Script project:
+   ```
+   clasp create --type standalone --title "Amazon Order Lookup"
+   ```
+5. Push the code: `clasp push`
+6. Open the script project in the browser: `clasp open`
+7. Go to **Deploy → Test deployments**
+8. Set the application type to **Editor Add-on**
+9. Select your Tiller spreadsheet as the test document
+10. Click **Execute** — this will open the spreadsheet with the add-on active
 
 ## Features
 
@@ -15,9 +39,17 @@ details from a "tmp-amazon" sheet (columns: total, date, items).
   with a Category value. Adds order notes to each matching Amount cell and shows
   a summary when done.
 
-## Deployment
+## Making Changes
 
-1. `clasp push --force`
-2. Open the Apps Script project and execute a new **test deployment**
-   (reloading the spreadsheet alone is not enough)
+1. Edit `Code.gs` locally
+2. `clasp push --force`
+3. Open the Apps Script project (`clasp open`) and execute a new **test
+   deployment** — reloading the spreadsheet alone is not enough
+
+## Installing in a New Spreadsheet
+
+1. Open the Apps Script project: `clasp open`
+2. Go to **Deploy → Test deployments**
+3. Select the new spreadsheet as the test document
+4. Click **Execute**
 
