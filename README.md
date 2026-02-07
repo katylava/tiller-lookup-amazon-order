@@ -8,8 +8,21 @@ history.
 
 - A [Tiller](https://www.tillerhq.com/) spreadsheet with a "Transactions" sheet
   (standard Tiller columns: Description, Amount, Category, etc.)
-- A sheet named **"tmp-amazon"** in the same spreadsheet containing your Amazon
-  order history export, with columns: `total`, `date`, `items`
+- A **"tmp-amazon"** sheet in the same spreadsheet (see below)
+
+## Preparing the tmp-amazon Sheet
+
+1. Export your Amazon order history as CSV using the
+   [Amazon Order History Reporter](https://chromewebstore.google.com/detail/amazon-order-history-repo/mgkilgclilajckgnedgjgnfdokkgnibi)
+   Chrome extension
+2. Create a new tab in the Tiller spreadsheet named **tmp-amazon**
+3. Paste the CSV file contents into the sheet
+4. Select the pasted column, then use **Data → Split text to columns** to
+   split on commas
+5. Verify the resulting columns include `total`, `date`, and `items`
+
+When you're done looking up orders, delete the tmp-amazon tab or at least clear
+its contents — it's not needed after the notes have been added
 
 ## Initial Setup
 
