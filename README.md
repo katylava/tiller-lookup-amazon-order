@@ -38,7 +38,7 @@ its contents — it's not needed after the notes have been added.
 ## Initial Setup
 
 1. Install [clasp](https://github.com/google/clasp): `npm install -g @google/clasp`
-2. Log in: `clasp login`
+2. Log in: `clasp login` — grant all the permissions it asks for
 3. Enable the Apps Script API at https://script.google.com/home/usersettings
 4. Create the standalone Apps Script project:
    ```
