@@ -1,5 +1,8 @@
 # Tiller Amazon Order Lookup
 
+> **Note:** This code was written entirely by Claude (Anthropic) and has not been
+> reviewed by a human. It has only been QA'd by a human.
+
 A Google Apps Script add-on for Tiller spreadsheets that matches Amazon
 transactions to order details (date and items) from an exported Amazon order
 history.
