@@ -19,7 +19,7 @@ exported Amazon order history.
   with a Category value. Adds order notes to each matching Amount cell and shows
   a summary when done.
 
-## Usage
+## Everyday Usage
 
 ### Preparing the tmp-amazon Sheet
 
@@ -35,9 +35,7 @@ exported Amazon order history.
 When you're done looking up orders, delete the tmp-amazon tab or at least clear
 its contents — it's not needed after the notes have been added.
 
-## Development
-
-### Initial Setup
+## Initial Setup
 
 1. Install [clasp](https://github.com/google/clasp): `npm install -g @google/clasp`
 2. Log in: `clasp login`
@@ -52,6 +50,8 @@ its contents — it's not needed after the notes have been added.
 8. Set the application type to **Editor Add-on**
 9. Select your Tiller spreadsheet as the test document
 10. Click **Execute** — this will open the spreadsheet with the add-on active
+
+## Development
 
 ### Making Changes
 
