@@ -56,7 +56,9 @@ its contents — it's not needed after the notes have been added.
 ### Making Changes
 
 1. Edit `Code.gs` locally
-2. `clasp push --force`
+2. `clasp push --force` (the `--force` flag ensures the local manifest
+   `appsscript.json` overwrites the remote one, avoiding conflicts if they've
+   drifted apart)
 3. Open the Apps Script project (`clasp open-script`) and execute a new **test
    deployment** — reloading the spreadsheet alone is not enough
 
