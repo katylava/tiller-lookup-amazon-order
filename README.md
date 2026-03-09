@@ -21,6 +21,16 @@ exported Amazon order history.
 
 ## Everyday Usage
 
+### Reattaching the Add-on
+
+Test deployments detach after a period of inactivity. If the add-on menu no
+longer appears in your spreadsheet:
+
+1. `clasp open-script`
+2. Go to **Deploy → Test deployments**
+3. Confirm your Tiller spreadsheet is selected as the test document
+4. Click **Execute**
+
 ### Preparing the tmp-amazon Sheet
 
 1. Export your Amazon order history as CSV using the
